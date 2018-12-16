@@ -1,0 +1,218 @@
+.service{
+    margin-bottom: 100px;
+    overflow: hidden;
+
+    @include phablet {
+        margin-bottom: 300px;
+    }
+
+    .hero-block{
+        margin-bottom: 60px;
+        position: relative;
+
+        @include phablet {
+            margin-bottom: 140px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .service-title{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h2{
+            color: $brand-yellow;
+            font: $venetian;
+            font-size: 4rem;
+            line-height: 3rem;
+            text-shadow: 0 4px 4px $black;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+
+            @include tablet {
+                font-size: 6rem;
+                line-height: 3.9rem;
+            }
+        }
+    }
+
+    .blue-square{
+        background-color: $brand-blue;
+        height: 25vw;
+        position: relative;
+
+        img{
+            position: absolute;
+            transform: translatey(18vw) translateX(-54%);
+            width: 300px;
+            z-index: 1;
+
+            @include tablet {
+                width: 357px;
+            }
+
+            &.photo-vocha{
+
+            }
+
+            &.mirror-booth{
+                width: 130px;
+
+                @include tablet {
+                    width: 130px;
+                }
+            }
+
+            &.open-air{
+                width: 107px;
+                transform: translatey(12vw) translateX(-54%);
+
+                @include tablet {
+                    width: 107px;
+                }
+            }
+        }
+
+
+    }
+    .gallery{
+        margin-top: 80px;
+        padding-top: 36px;
+        text-align: center;
+
+        @include tablet {
+            margin-top: 164px;
+        }
+
+        p{
+            font: $myriad-bold;
+            font-size: 12.5vw;
+            letter-spacing: 4.7vw;
+            left: 50%;
+            margin-bottom: 0px;
+            opacity: 0.1;
+            top: 0;
+            transform: translateX(-50%);
+            z-index: -1;
+            position: absolute;
+            transition: all 2s ease-out;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .col-100{
+            display: block;
+            float: left;
+            width: 100%;
+            height: 40vw;
+            position: relative;
+        }
+        .col-60{
+            display: block;
+            float: left;
+            width: 100%;
+            
+            @include tablet {
+                width: 60%;
+            }
+        }
+        .col-50{
+            display: block;
+            float: left;
+            width: 50%;
+            height: 20vw;
+            position: relative;
+
+            p{
+                top: 55%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 90px;
+            }
+        }
+        .col-40{
+            display: none;
+            float: left;
+            width: 40%;
+            position: relative;
+
+            @include tablet {
+                display: block;
+            }
+
+            p{
+                top: 55%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 90px;
+            }
+        }
+
+        .col-20{
+            display: block;
+            float: left;
+            height: 33.33vw;
+            width: 33.33%;
+            position: relative;
+
+            @include tablet {
+                height: 20vw;
+            }
+
+            p{
+                top: 55%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 90px;
+            }
+        }
+
+        .image-container{
+            background-color: $brand-red;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+            transition: all 1s ease-out;
+
+            img{
+                transition: all 1s ease-out;
+                transition-delay: 1s;
+            }
+        }
+
+        .screen{
+            background-color: $white;
+            height: 100%;
+            opacity: 5;
+            position: absolute;
+            left: 0;
+            transition: all 1s ease-out;
+            width: 0%;
+        }
+
+        &.out{
+            p{
+                left: 0%;
+                opacity: 0;
+            }
+            .image-container{
+                opacity: 0;
+    
+                img{
+                    opacity: 0;
+                    transform: translateY(50px);
+                    transition-delay: 0s;
+                }
+            }
+            .screen{
+                width: 100%;
+            }
+        }
+    }
+}

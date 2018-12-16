@@ -1,0 +1,43 @@
+﻿/* VENETIAN FONT */
+$venetian: normal normal 400 14px/21px "venetian", sans-serif;
+
+/* Myriad FONT */
+$myriad-light: normal normal 300 14px/21px "myriad",sans-serif;
+$myriad-normal: normal normal 300 14px/21px "myriad",sans-serif;
+$myriad-bold: normal normal 700 14px/21px "myriad",sans-serif;
+
+h1{
+    margin-bottom: 10px;
+}
+h2{
+    font: $myriad-bold;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    color: $text-gray;
+    text-transform: uppercase;
+}
+p, label{
+    color: $text-gray;
+    font: $myriad-normal;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+a{
+    font: $myriad-normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    color: $text-gray;
+    font: $myriad-normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}

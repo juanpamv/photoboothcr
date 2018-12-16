@@ -1,0 +1,31 @@
+.login{
+    background-color: $light-gray;
+    border-bottom: 1px solid black;
+    height: calc(100vh - 45px);
+    padding-top: 200px;
+
+    h1{
+        color: $text-gray;
+        font: $myriad-bold;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .form-group{
+        &:last-of-type{
+            margin-bottom: 20px;
+        }
+    }
+
+    .button{
+        margin-bottom: 20px;
+    }
+
+    .error-message{
+        p{
+            color: $error-red;
+        }
+    }
+}

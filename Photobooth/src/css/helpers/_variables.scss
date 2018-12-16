@@ -1,0 +1,56 @@
+/* Colors */
+$black: #000;
+$white: #FFF;
+
+// Custom Colors
+$brand-blue: #282B3D;
+$brand-yellow: #FFF450;
+$brand-red: #DE4F51;
+$text-gray: #4A4A4A;
+$light-gray: #ECECEC;
+$error-red: #a94442;
+
+//== Iconography
+$icon-font-path: "../fonts/" !default;
+
+// Bootstrap Container Overwrite
+$container-max-width:        1170px;
+$container-min-width:        320px;
+
+//== Media queries breakpoints
+
+// Extra small screen / phone
+$screen-xs:                  320px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+
+// Small screen / phablet
+$screen-sm:                  640px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / tablet
+$screen-md:                  768px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+// Large screen /  desktop
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+
+// Large screen /  desktop
+$screen-size:                  100%;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+$screen-lg-max:              $container-max-width;
+
+// Container width 100%
+$container-sm:               100%;
+$container-md:               768px;
+$container-lg:               1170px;
+
+$grid-float-breakpoint:      $screen-lg-min;

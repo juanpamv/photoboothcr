@@ -1,0 +1,39 @@
+﻿// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+    $remSize: $size / 10px;
+    //Default font size on html element is 100%, equivalent to 10px;
+    @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+    font-size: $size;
+    font-size: calculateRem($size)
+}
+
+// Mixin for controlling the media queries
+@mixin phone {
+   @media (max-width: #{$screen-md - 1px}) {
+     @content;
+   }
+}
+@mixin phablet {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+@mixin tablet-only {
+   @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg}) {
+     @content;
+   }
+}
+@mixin desktop {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}

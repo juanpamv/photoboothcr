@@ -1,0 +1,51 @@
+﻿footer {
+    background-color: $brand-blue;
+    min-height: 285px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
+
+    h3{
+        color: $brand-yellow;
+        font: $venetian;
+        font-size: 3.6rem;
+        line-height: 3.9rem;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    p{
+        color: $white;
+        margin-bottom: 10px;
+    }
+
+    .logo{
+        max-width: 158px;
+    }
+
+    .social-container{
+        position: relative;
+        text-align: center;
+
+        @include tablet {
+            height: 140px;
+        }
+
+        p{
+            @include tablet {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%
+            }
+        }
+    }
+
+    .social{
+        padding: 0 10px;
+    }
+}

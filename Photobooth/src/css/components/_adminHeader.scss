@@ -1,0 +1,18 @@
+.admin-header{
+    padding-top: 170px;
+    padding-bottom: 70px;
+
+    h1{
+        color: $text-gray;
+        display: inline-block;
+        font: $myriad-bold;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        text-transform: uppercase;
+    }
+
+    .button{
+        float: right;
+        margin-right: 0;
+    }
+}

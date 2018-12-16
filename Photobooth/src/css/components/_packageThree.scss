@@ -1,0 +1,94 @@
+.package-three{
+    margin-bottom: 60px;
+    transition: all 1s ease-out;
+
+    @include phablet {
+        margin-bottom: 140px;
+    }
+
+    p{
+        font-size: 2rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+    }
+    a{
+        background-color: $brand-red;
+        color: $white;
+        padding: 10px 45px;
+
+        &:hover{
+            background-color: darken($brand-red,15%);
+            text-decoration: none;
+        }
+    }
+    .button-container{
+        text-align: center;
+        padding: 50px 0;
+
+        @include tablet {
+            padding: 50px 0 0 0;
+        }
+    }
+    .image-container{
+        background-color: $brand-red;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        transition: all 1s ease-out;
+
+        img{
+            transition: all 1s ease-out;
+            transition-delay: 1s;
+        }
+    }
+    .screen{
+        background-color: $white;
+        height: 100%;
+        opacity: 5;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+        width: 0%;
+    }
+    .blue-square{
+        background-color: $brand-blue;
+        height: 25vw;
+        position: relative;
+        text-align: right;
+        transition: all 1s ease-out;
+
+        img{
+            transform: translatey(-55%) translateX(60%);
+            width: 100px;
+
+            @include tablet {
+                width: 120px;
+            }
+
+            @include desktop {
+                width: 140px;
+            }
+        }
+    }
+
+    &.out{
+        opacity: 0;
+
+        .image-container{
+            opacity: 0;
+
+            img{
+                opacity: 0;
+                transform: translateY(50px);
+                transition-delay: 0s;
+            }
+        }
+        .screen{
+            width: 100%;
+        }
+        .blue-square{
+            opacity: 0;
+            width: 0;
+        }
+    }
+}

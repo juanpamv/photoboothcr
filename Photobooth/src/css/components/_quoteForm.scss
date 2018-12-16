@@ -1,0 +1,62 @@
+.quote-form{
+    margin-bottom: 80px;
+
+    .services-menu{
+        margin-bottom: 10px;
+
+        .service{
+            &.selected{
+
+                p{
+                    background-color: $brand-red;
+                    color: $white;
+                    transform: rotate(-3deg);
+                }   
+            }
+        }
+
+        .img-container{
+            pointer-events: none;
+        }
+
+    }
+
+    .block{
+        border-bottom: $black 1px solid;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+
+        &-title{
+            margin-bottom: 30px;
+            text-align: left;
+        }
+    }
+
+    textarea{
+        margin-bottom: 40px;
+    }
+    .answers{
+        
+        p{
+            display: inline-block;
+            padding: 5px 10px;
+
+            &:hover{
+                background-color: $brand-red;
+                color: $white;
+                transform: rotate(-3deg);
+            }
+
+            &.selected{
+                background-color: $brand-red;
+                color: $white;
+                transform: rotate(-3deg);
+            }
+        }
+    }
+}
+
+.thanks-message{
+    padding-bottom: 400px;
+}

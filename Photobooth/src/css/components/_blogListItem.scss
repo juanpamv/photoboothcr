@@ -1,0 +1,13 @@
+.blog-list-item{
+    border-bottom: solid $black 1px;
+    
+    button{
+
+        &.delete{
+            background-color: red;
+        }
+        &.edit{
+            background-color: yellow;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.package-four{
+    margin-bottom: 60px;
+    transition: all 1s ease-out;
+
+    @include phablet {
+        margin-bottom: 140px;
+    }
+
+    p{
+        color: $text-gray;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+
+        @include phablet {
+            color: $white;
+        }
+    }
+    a{
+        background-color: $brand-red;
+        color: $white;
+        padding: 10px 45px;
+
+        &:hover{
+            background-color: darken($brand-red,15%);
+            text-decoration: none;
+        }
+    }
+    .button-container{
+        text-align: center;
+        position: relative;
+        padding: 50px 0;
+
+        @include phablet {
+            padding: 0;
+        }
+
+        div{
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translatey(-50%) translateX(-50%);
+            width: 100%;
+            transition: all 1s ease-out;
+            transition-delay: 1s;
+        }
+    }
+    .image-container{
+        background-color: $brand-red;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        transition: all 1s ease-out;
+
+        @include tablet {
+            padding: 0;
+        }
+
+        img{
+            transition: all 1s ease-out;
+            transition-delay: 1s;
+        }
+        
+    }
+    .screen{
+        background-color: $white;
+        height: 100%;
+        opacity: 5;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+        width: 0%;
+    }
+    .blue-square{
+        background-color: $brand-blue;
+        height: 25vw;
+        position: relative;
+        transition: all 1s ease-out;
+
+        img{
+            position: absolute;
+            transform: translatey(45%) translateX(-60%);
+            width: 151px;
+        }
+    }
+    .second-block{
+        bottom: 0;
+        position: absolute;
+        width: 50%;
+        left: calc(50% - 1px);
+    }
+    .second-image{
+        background-color: $brand-red;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        transition: all 1s ease-out;
+
+        img{
+            transition: all 1s ease-out;
+            transition-delay: 1s;
+        }
+    }
+
+    &.out{
+        opacity: 0;
+
+        .image-container, .second-image{
+            opacity: 0;
+
+            img{
+                opacity: 0;
+                transform: translateY(50px);
+                transition-delay: 0s;
+            }
+        }
+        .button-container{
+
+            div{
+                opacity: 0;
+                transition-delay: 0s;
+            }
+        }
+        .screen{
+            width: 100%;
+        }
+        .blue-square{
+            opacity: 0;
+            width: 0;
+        }
+    }
+}

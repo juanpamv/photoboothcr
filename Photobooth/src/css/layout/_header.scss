@@ -1,0 +1,64 @@
+﻿header{
+    .navbar{
+        background-color: $brand-blue;
+        border: none;
+    }
+
+    .logo{
+        width: 165px;
+    }
+
+    .navbar-header{
+        text-align: center;
+    }
+
+    .navbar-brand{
+        float: none;
+        display: inline-block;
+        transform: translateX(28.5px);
+    }
+
+    .navbar-nav{
+        text-align: center;
+        margin: 80px -15px 7.5px;
+
+        a{
+            color: $brand-yellow !important;
+            font: $venetian;
+            font-size: 3.6rem;
+            line-height: 3.9rem;
+            letter-spacing: 2px;
+        }
+    }
+
+    .navbar-inverse{
+
+        .navbar-toggle{
+            border: none;
+            padding: 16px 10px;
+
+            &:hover, &:focus{
+                background-color: transparent;
+            }
+            
+            .icon-bar{
+                height: 3px;
+                width: 37px;
+
+                & + .icon-bar{
+                    margin: 6px 0;
+                }
+            }
+        }
+    }   
+
+    .navbar-collapse{
+        box-shadow: none;
+    }
+
+    .navbar-fixed-top .navbar-collapse{
+        border: none;
+        height: 100vh;
+        max-height: 100vh;
+    }
+}

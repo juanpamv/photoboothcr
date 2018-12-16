@@ -1,0 +1,17 @@
+.CRED-menu{
+    text-align: center;
+    
+    ul{
+        background-color: $brand-blue;
+        padding: 0 15px;
+    }
+    li{
+        color: $white;
+        border-bottom: 1px solid $white;
+        padding: 15px 0;
+
+        &:last-of-type{
+            border-bottom: none;
+        }
+    }
+}
